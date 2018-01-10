@@ -30,8 +30,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoE-jA-1Co">
+                                <rect key="frame" x="164" y="284.5" width="47.5" height="97"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="81"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="to1-cy-69s">
-                                <rect key="frame" x="115" y="467" width="145" height="30"/>
+                                <rect key="frame" x="130" y="566" width="114" height="48"/>
                                 <color key="backgroundColor" red="0.53032603979795545" green="1" blue="0.91288548512405643" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="Cold Call">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -43,15 +49,19 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="to1-cy-69s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="115" id="5aX-Bh-0GV"/>
+                            <constraint firstItem="to1-cy-69s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="AKp-uP-jrG"/>
+                            <constraint firstItem="MoE-jA-1Co" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="InX-8r-PRh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="to1-cy-69s" secondAttribute="trailing" constant="131" id="Jx2-jD-EDT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="to1-cy-69s" secondAttribute="bottom" constant="53" id="L38-Eq-qd1"/>
                             <constraint firstItem="Bfv-cb-1hh" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Pb3-rE-ufc"/>
-                            <constraint firstItem="to1-cy-69s" firstAttribute="top" secondItem="Bfv-cb-1hh" secondAttribute="bottom" constant="422.5" id="eR7-0R-fSU"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="to1-cy-69s" secondAttribute="trailing" constant="115" id="uIQ-ZQ-Smv"/>
+                            <constraint firstItem="to1-cy-69s" firstAttribute="top" secondItem="MoE-jA-1Co" secondAttribute="bottom" constant="184.5" id="Pod-DE-VUd"/>
+                            <constraint firstItem="MoE-jA-1Co" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="eUF-Rw-GjO"/>
                             <constraint firstItem="Bfv-cb-1hh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ynC-KY-DBv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="numberLabel" destination="MoE-jA-1Co" id="hbM-SK-VVB"/>
                         <outlet property="titleLabel" destination="Bfv-cb-1hh" id="lWg-8T-Hx4"/>
                     </connections>
                 </viewController>
